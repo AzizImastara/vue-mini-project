@@ -57,7 +57,7 @@ getProducts()
 </script>
 
 <template>
-  <h1>Aplikasi Pengelolaan Produk Anjay Mabar</h1>
+  <h1>Pengelolaan Produk</h1>
 
   <div class="form">
     <h2>Form Tambah Dan Edit Produk</h2>
@@ -126,19 +126,19 @@ getProducts()
 .form {
   border: 1px solid #ccc;
   padding: 1rem;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .input-form {
   margin-bottom: 1rem;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .input-form label {
   display: block;
   margin-bottom: .25rem;
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .input-form input{
@@ -146,7 +146,7 @@ getProducts()
   display: flex;
   justify-content: center;
   margin: 12px;
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 button {
@@ -161,12 +161,12 @@ button {
 
 .btn-success {
   background-color: rgb(36, 190, 87);
-  color: white;
+  /* color: white; */
 }
 
 .btn-danger {
   background-color: rgb(190, 92, 36);
-  color: white;
+  /* color: white; */
 }
 
 .btn-primary {
