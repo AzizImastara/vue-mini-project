@@ -57,8 +57,11 @@ getProducts()
 </script>
 
 <template>
-  <h1>Pengelolaan Produk</h1>
-
+  <div class="container">
+    <div class="title">
+      <h1>Pengelolaan Produk</h1>
+    </div>
+<div class="form-container">
   <div class="form">
     <h2>Form Tambah Dan Edit Produk</h2>
     <div class="input-form">
@@ -89,12 +92,16 @@ getProducts()
       </template>
     </div>
   </div>
+</div>
 
-  <div>
+
+  <div class="search-container">
     <label for="search">Cari : </label>
     <input type="search" name="search" id="search" v-model="search_value">
   </div>
-  <table>
+
+  <div class="table-container">
+    <table>
     <thead>
       <tr>
         <th>No</th>
@@ -120,13 +127,41 @@ getProducts()
       </tr>
     </tbody>
   </table>
+  </div>
+  </div>
+
+
 </template>
 
 <style scoped>
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.form-container,
+.search-container,
+.table-container {
+  margin-bottom: 20px; 
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
 .form {
   border: 1px solid #ccc;
+  border-radius: 12px;
   padding: 1rem;
-  /* background-color: antiquewhite; */
+  width: 100%; /* atau lebar yang Anda inginkan */
 }
 
 .input-form {
@@ -142,21 +177,28 @@ getProducts()
 }
 
 .input-form input{
-  /* width: 100%; */
+  width: 100%;
+  max-width: calc(100% - 32px);
   display: flex;
+  border-radius: 12px;
   justify-content: center;
-  margin: 12px;
-  /* background-color: gray; */
+  /* margin: 12px; */
+  padding: 12px;
+}
+
+.search-container input{
+  border-radius: 8px;
+  padding: 12px;
 }
 
 button {
   cursor: pointer;
-  padding: .75rem;
+  padding: 12px;
   border: 0;
-  border-radius: 5px;
-  margin-right: 1rem;
+  border-radius: 12px;
+  /* margin-right: .75rem; */
   width: 100%;
-  margin: 12px 0;
+  margin: 12px 0 ;
 }
 
 .btn-success {
